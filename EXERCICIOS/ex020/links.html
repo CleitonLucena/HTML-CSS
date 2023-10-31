@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style> 
+
+  /* SELETORES PERSONALIZADOS 
+    # = id 
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = child
+    */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color:rgb(229, 43, 43);
+      text-decoration: none; /* tira o sublinhado */
+      font-weight: bold; /* deixa em negrito */
+    }
+
+    a:visited {
+      color: darkred;
+    }
+
+    a:hover {
+      color: blue; /*quando passa o mouse por cima mostra uma cor */
+      text-decoration: underline; /* quando passa o mouse por cima mostra sublinhado */
+    }
+
+    a:active {  /*quando clica ele muda a cor*/
+      color: yellow; 
+    }
+
+    .especial {
+      background-color: rgb(165, 153, 42);
+    }
+
+    .especial::after{
+      content: '⇐';
+    }
+
+    .especial::before{
+      content: '⇒';
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Personalizando links</h1>
+  <ul>
+    <li><a href="https://www.instagram.com/cleitonlucena/" target="_blank">Instagram</a></li>
+    <li><a href="https://www.linkedin.com/in/cleiton-lucena-320609219/" target="_blank" class="especial">LinkedIn</a></li>
+    <li><a href="https://www.youtube.com/channel/UCIfuAt-sfM7yEv0As9qEQXw" target="_blank">Canal do youtube</a></li>
+  </ul>
+</body>
+</html>
